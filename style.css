@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Sofia+Sans:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    text-decoration: none;
+}
+
+:root {
+    --red: #D14420;
+    --black: #080808;
+}
+
+.menu-bar {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 3px 5px 0px;
+    padding: 3vh 2vw;
+}
+
+/* style menu logo */
+.menu-logo {
+    color: var(--red);
+    font-weight: 600;
+    font-size: 1.3rem;
+}
+
+.menu-logo span {
+    color: var(--black);
+}
+
+/* style menu items */
+.menu-items {
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+}
+
+.menu-items ul {
+    display: flex;
+    justify-content: space-around;
+    gap: 2vw;
+}
+
+.menu-items ul li a {
+    font-size: 1rem;
+    color: var(--black);
+    font-weight: 500;
+    transition: all 0.3s;
+}
+
+.menu-items ul li a:hover {
+    color: var(--red);
+}
+
+.menu-items span {
+    cursor: pointer;
+    color: var(--black);
+    transition: all 0.3s;
+    font-weight: 700;
+}
+
+.menu-items span:hover {
+    color: var(--red);
+}
+
+/* style menu responsive */
+.menu-responsive {
+    display: none;
+    cursor: pointer;
+}
+
+.bar {
+    display: block;
+    background-color: var(--black);
+    width: 28px;
+    height: 3px;
+    border-radius: 3px;
+    margin: 5px auto;
+    transition: all 0.3s;
+}
+
+.menu-responsive .bar:nth-child(1),
+.menu-responsive .bar:nth-child(3) {
+    background-color: var(--red);
+}
+
+/* SDG */
